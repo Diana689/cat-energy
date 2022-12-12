@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html class="form-page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Функциональное питание для котов cat energy</title>
+  <link rel="stylesheet" href="bloks\header.css" type="text/css">
+  <link rel="stylesheet" href="bloks\formpage.css" type="text/css">
+  <link rel="stylesheet" href="bloks\footer.css" type="text/css">
+  <link rel="stylesheet" href="global\fonts.css">
+  <link rel="stylesheet" href="global\global.css">
+</head>
+<body class="form-page__body">
+  <header class="page-header">
+    <div class="page-header__logo">
+      <a class="page-header__logo-items">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images\header\logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="images\header\logo-tablet.svg">
+          <img class="page-header__logo-icon" src="images\header\logo-mobile.svg" >
+        </picture>
+      </a>
+      <a class="page-header__logo-items">
+        <img class="page-header__logo-item" src="images\header\logo.svg" >
+      </a>
+    </div>
+    <nav class="page-header__main-nav page-header__main-nav--opened page-header__main-nav--nojs" >
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="main-nav__list-catalog">
+        <li class="main-nav__list-item main-nav__item-catalog ">
+          <a class="main-nav__list-link">Главная</a>
+        </li>
+        <li class="main-nav__list-item main-nav__item-catalog ">
+          <a class="main-nav__list-link href="#">Каталог продукции</a>
+        </li>
+        <li class="main-nav__list-item main-nav__item-catalog main-nav__list-item--activ main-nav__catalog-item--activ">
+          <a class="main-nav__list-link href="#">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <script>
+    var navMain = document.querySelector('.page-header__main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('page-header__main-nav--nojs');
+
+    navToggle.addEventListener('click', function(){
+      if (navMain.classList.contains('page-header__main-nav--closed')){
+        navMain.classList.remove('page-header__main-nav--closed');
+        navMain.classList.add('page-header__main-nav--opened');
+      } else {
+        navMain.classList.add('page-header__main-nav--closed');
+        navMain.classList.remove('page-header__main-nav--opened');
+      }
+    });
+  </script>
+  <main class="form-main">
+    <section class="page-main__form form">
+      <div class="form__wrapper">
+        <h1 class="form__title">Подбор программы</h1>
+        <p class="form__intro">Заполните анкету, и мы подберем<br>
+          программу питания для вашего кота</p>
+        <form class="form__data" action="#" method="post">
+          <div class="form__personal">
+            <fieldset class="form__data-personal personal-data">
+              <!-- нужен ли тут р? -->
+                <p class="personal-data__name">
+                  <label class="name" for="name">имя:*</label>
+                  <input class="name__intro" id="name" type="text" name="name" placeholder="барсик">
+                </p>
+                <p class="personal-data__weight">
+                  <label class="weight" for="weight">вес(кг):*</label>
+                  <input class="weight__intro" id="weight" type="text" name="weight" placeholder="7">
+                </p>
+                <p class="personal-data__age">
+                  <label class="age" for="age">возраст(лет):*</label>
+                  <input class="age__intro" id="age" type="text" name="age" placeholder="7">
+                </p>
+            </fieldset>
+            <fieldset class="form__data-purpose purpose">
+              <ul class="purpose__list">
+                <li class="purpose__item">
+                  <label class="purpos__control">
+                    <input class="visually-hidden purpos__control-input" type="radio" name="purpos" value="slim" checked>
+                    <span class="control-mark"></span>
+                    <span class="purpose__label">похудение</span>
+                  </label>
+                </li>
+                <li class="purpose__item">
+                  <label class="purpos__control">
+                    <input class="visually-hidden purpos__control-input" type="radio" name="purpos" value="pro" checked>
+                    <span class="control-mark"></span>
+                    <span class="purpose__label">набор массы</span>
+                  </label>
+                </li>
+                <li class="purpose__item">
+                  <label class="purpos__control">
+                    <input class="visually-hidden purpos__control-input" type="radio" name="purpos" value="advice" checked>
+                    <span class="control-mark"></span>
+                    <span class="purpose__label">Не знаю (Нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <fieldset class="form__data-contacts data-contacts">
+            <h2 class="data-contacts__title">Контактные данные (владельца кота)</h2>
+            <div class="data-contacts__wrapper">
+              <p class="data-contacts__mail">
+                <label class="mail" for="mail">E-mail:*</label>
+                <input class="mail-intro" id="mail" type="text" name="mail" placeholder="kuklachev@gmail.com">
+                <svg class="mail_icon" role="img">
+                  <use xlink:href="/sprite.svg#icon_email"></use>
+                </svg>
+              </p>
+              <p class="data-contacts__number">
+                <label class="number" for="number">Телефон:*</label>
+                <input class="number-intro" id="number" type="text" name="number" placeholder="8 (960) 900-60-90">
+                <svg class="icon_phone" role="img">
+                  <use xlink:href="/sprite.svg#icon_phone"></use>
+                </svg>
+              </p>
+            </div>
+          </fieldset>
+          <fieldset class="form__data-comment comment">
+            <h2 class="comment__title">Комментарий</h2>
+            <textarea class="form-comment" name="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+          <fieldset class="form__data-additionally additionally">
+            <h2 class="additionally__title">Дополнительно</h2>
+            <ul class="additionally__list">
+              <li class="additionally__item">
+                <label class="additionally__control">
+                  <input class="visually-hidden additionally__control-inpyt" type="checkbox" name="sugar-subsitute" checked>
+                  <span class="additionally__control-mark"></span>
+                  <span class="additionally__control-label">сахарозаменитель</span>
+                </label>
+              </li>
+              <li class="additionally__item">
+                <label class="additionally__control">
+                  <input class="visually-hidden additionally__control-inpyt" type="checkbox" name="water" checked>
+                  <span class="additionally__control-mark"></span>
+                  <span class="additionally__control-label">питьевая вода</span>
+                </label>
+              </li>
+              <li class="additionally__item">
+                <label class="additionally__control">
+                  <input class="visually-hidden additionally__control-inpyt" type="checkbox" name="milk" checked>
+                  <span class="additionally__control-mark"></span>
+                  <span class="additionally__control-label">молоко</span>
+                </label>
+              </li>
+              <li class="additionally__item">
+                <label class="additionally__control">
+                  <input class="visually-hidden additionally__control-inpyt" type="checkbox" name="vitamins" checked>
+                  <span class="additionally__control-mark"></span>
+                  <span class="additionally__control-label">витамины</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+        <div class="form__application">
+          <button class="form__button" type="button">
+            <span class="form__button-text">отправить заявку</span>
+          </button>
+          <p class="form__legend">
+            <small class="form__legend">
+              * — Обязательные поля
+            </small>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper catalog-footer__wrapper">
+      <section class="page-footer__cooperation cooperation">
+      <div class="page-footer__cooperation-wrapper">
+        <b class="cooperation__title">приглашаем к сотрудничеству дилеров!</b>
+        <p class="cooperation__address">
+          <span class="cooperation__address-intro">ул. Большая Конюшенная, д. 19/8</span>
+          <span class="cooperation__address-intro">Санкт-Петербург</span>
+        </p>
+      </div>
+      </section>
+      <picture>
+        <source media="(min-width: 1440px)" srcset="images\footer\location-des.jpg 1x, images\footer\location-des@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="images\footer\location-tab.jpg 1x, images\footer\location-tab@2x.jpg 2x">
+        <img class="page-footer__map" src="images\footer\location-mob.jpg" srcset="images\footer\location-mob@2x.jpg 2x" alt="расположение на карте">
+      </picture>
+      <section class="page-footer__contacts">
+
+        <div class="page-footer__contacts-wrapper">
+          <a class="page-footer__logo-item">
+
+            <img class="page-footer__logo" src="images\footer\footer-logo.svg" width="128px" height="24px" alt="логотип">
+          </a>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#" alt="Мы в Вконтакте">
+                <svg class="social__link-icon social__link-vkontakte" role="img">
+                  <use xlink:href="/sprite.svg#icon_vkontakte"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" alt="Мы в Инстаграм" >
+                <svg class="social__link-icon social__link-instagram" role="img">
+                  <use xlink:href="/sprite.svg#icon_instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" alt="Мы в Фейсбуке" >
+                <svg class="social__link-icon social__link-facebook" role="img">
+                  <use xlink:href="/sprite.svg#icon_facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="copyrigh-wrapper">
+            <a class="page-footer__copyright copyright" href="#" alt="логотип">
+              <span class="copyright__text">HTML Academy</span>
+              <svg class="copyright__logo" role="img">
+                <use xlink:href="/sprite.svg#logo_html"></use>
+              </svg>
+
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </footer>
+</body>
+</html>
+
