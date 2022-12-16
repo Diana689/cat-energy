@@ -153,7 +153,6 @@
   margin-bottom: 25px;
 }
 
-/*  для каждого вида свои размеры */
 .control-mark{
   position: absolute;
   left: 0px;
@@ -161,6 +160,7 @@
   width: 30px;
   height: 30.1px;
   border: 1px solid #CDCDCD;
+  cursor: pointer;
 }
 
 .control-mark:active{
@@ -171,7 +171,6 @@
   border-radius: 50%;
 }
 
-/*  для каждого вида свои размеры */
 .purpos__control-input[type='radio']:checked + .control-mark::before{
   position: absolute;
   top: 8px;
@@ -379,6 +378,7 @@
   width: 30px;
   height: 30px;
   border: 1px solid #CDCDCD;
+  cursor: pointer;
 }
 
 .additionally__control-inpyt[type='checkbox']:checked + .additionally__control-mark::before{
