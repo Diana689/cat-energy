@@ -623,6 +623,40 @@
     margin-bottom: 0;
   }
 
+  .one{
+    background: url(../images/page/tab/program-operation1.jpg) top left 118px/ 90px 280px no-repeat;
+  }
+
+  .two{
+    background: url(../images/page/tab/program-operation2.jpg) top left 111px/ 112px 280px no-repeat;
+  }
+
+  .three{
+    background: url(../images/page/tab/program-operation3.jpg) top left 113px/ 112px 280px no-repeat;
+  }
+
+  .four{
+    background: url(../images/page/tab/program-operation4.jpg) top left 113px/ 112px 280px no-repeat;
+  }
+
+  @media (min-resolution: 2dppx){
+    .one{
+      background: url(../images/page/tab/program-operation1@2x.jpg) top left 118px/ 90px 280px no-repeat;
+    }
+
+    .two{
+      background: url(../images/page/tab/program-operation2@2x.jpg) top left 111px/ 112px 280px no-repeat;
+    }
+
+    .three{
+      background: url(../images/page/tab/program-operation3@2x.jpg) top left 113px/ 112px 280px no-repeat;
+    }
+
+    .four{
+      background: url(../images/page/tab/program-operation4@2x.jpg) top left 113px/ 112px 280px no-repeat;
+    }
+  }
+
   .program-operation__icon{
     margin: 0;
     padding-top: 40px;
@@ -903,6 +937,10 @@
     padding-bottom: 0px;
   }
 
+  .program-operation__intro{
+    padding-bottom: 97px;
+  }
+
   .program-operation__item:nth-child(4) {
     margin-bottom: 0;
   }
@@ -917,7 +955,7 @@
     margin: 0 ;
     padding: 0;
     margin: 0 auto;
-    margin-top: 126px;
+    margin-top: 69px;
     margin-bottom: 76px;
   }
 

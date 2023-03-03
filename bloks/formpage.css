@@ -1,5 +1,3 @@
-
-
 .form-page{
   height: 100%;
   font-family: 'Oswald';
@@ -233,6 +231,7 @@
   text-transform: uppercase;
   color: #444444;
   padding-left: 15px;
+  padding-right: 50px;
 }
 
 .mail_icon{
@@ -268,6 +267,7 @@
   text-transform: uppercase;
   color: #444444;
   padding-left: 15px;
+  padding-right: 50px;
 }
 
 .icon_phone{
@@ -276,7 +276,8 @@
   height: 21px;
   right: 13px;
   top: 13px;
- color: #000000;
+  color: #000000;
+
 }
 
 .form__data-contacts::after{
