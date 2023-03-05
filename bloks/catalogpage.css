@@ -161,7 +161,7 @@ card-discription__into
   opacity: 30%;
 }
 
-.card-image__small-chicken{
+.card-image__product-1{
   display: block;
   width: 68px;
   height: 86px;
@@ -169,7 +169,7 @@ card-discription__into
   margin-top: 33px;
 }
 
-.card-image__big-chicken{
+.card-image__product-2{
   display: block;
   width: 84px;
   height: 100.8px;
@@ -177,7 +177,7 @@ card-discription__into
   margin-top: 30px;
 }
 
-.card-image__small-fish{
+.card-image__product-3{
   display: block;
   width: 68px;
   height: 78px;
@@ -185,7 +185,7 @@ card-discription__into
   margin-top: 46px;
 }
 
-.card-image__big-fishe{
+.card-image__product-4{
   display: block;
   width: 84px;
   height: 100,8px;
@@ -193,7 +193,7 @@ card-discription__into
   margin-top: 30px;
 }
 
-.card-image__small-buckwheat{
+.card-image__product-5{
   display: block;
   width: 68px;
   height: 78px;
@@ -201,7 +201,7 @@ card-discription__into
   margin-top: 49px;
 }
 
-.card-image__big-buckwheat{
+.card-image__product-6{
   display: block;
   width: 84px;
   height: 100px;
@@ -209,7 +209,7 @@ card-discription__into
   margin-top: 31px;
 }
 
-.card-image__small-rice{
+.card-image__product-7{
   display: block;
   width: 72px;
   height: 84px;
@@ -445,49 +445,49 @@ card-discription__into
     margin-bottom: 0;
   }
 
-  .card-image__small-chicken{
+  .card-image__product-1{
     width: 161px;
     height: 172px;
     padding-top: 36px;
     margin-top: 0;
   }
 
-  .card-image__big-chicken{
+  .card-image__product-2{
     width: 168px;
     height: 206.06px;
     padding-top: 8px;
     margin-top: 0;
   }
 
-  .card-image__small-fish{
+  .card-image__product-3{
     width: 163px;
     height: 174px;
     padding-top: 34px;
     margin-top: 0;
   }
 
-  .card-image__big-fishe{
+  .card-image__product-4{
     width: 168px;
     height: 200px;
     padding-top: 8px;
     margin-top: 0;
   }
 
-  .card-image__small-buckwheat{
+  .card-image__product-5{
     width: 161px;
     height: 171px;
     padding-top: 37px;
     margin-top: 0;
   }
 
-  .card-image__big-buckwheat{
+  .card-image__product-6{
     width: 168px;
     height: 200px;
     padding-top: 8px;
     margin-top: 0;
   }
 
-  .card-image__small-rice{
+  .card-image__product-7{
     width: 163px;
     height: 174px;
     padding-top: 34px;
@@ -708,37 +708,37 @@ card-discription__into
     width: 168px;
   }
 
-  .card-image__small-chicken{
+  .card-image__product-1{
     padding-top: 29px;
   }
 
-  .card-image__big-chicken{
+  .card-image__product-2{
     width: 172px;
     height: 201.94px;
     padding-top: 1px;
   }
 
-  .card-image__small-fish{
+  .card-image__product-3{
     padding-top: 27px;
   }
 
-  .card-image__big-fishe{
+  .card-image__product-4{
     width: 172px;
     height: 196px;
     padding-top: 1px;
   }
 
-  .card-image__small-buckwheat{
+  .card-image__product-5{
     padding-top: 30px;
   }
 
-  .card-image__big-buckwheat{
+  .card-image__product-6{
     width: 172px;
     height: 196px;
     padding-top: 1px;
   }
 
-  .card-image__small-rice{
+  .card-image__product-7{
     padding-top: 27px;
   }
 
