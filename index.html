@@ -156,30 +156,19 @@
               <span class="example__cost-item" >15 000 руб.</span></b>
           </div>
         </article>
-        <article class="example__phofo">
-          <ol class="example__picture slider ">
-            <li class="example__picture-before slider__item">
-              <picture>
-                <source media="(min-width: 1440px)" srcset="images\page\des\before-desktop.png 1x, images\page\tab\before-tab@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="images\page\tab\before-tab.png 1x, images\page\tab\before-tab@2x.png 2x">
+        <article class="example__slider">
+          <div class="slider-wrapper">
+            <div class="img slider-after"></div>
+            <div class="img slider-before"></div>
+          </div>
+          <div class="example__slider-change change">
+            <span class="change-before">Было</span>
+            <input class="change__item" type="range" id="fader" oninput="onSliderChange(this.value)">
+            <span class="change-after">Стало</span>
+          </div>
 
-                <img src="../images/page/mob/before-mobile.png" srcset="images\page\mob\before-mobile@2x.png 2x" alt="было">
-              </picture>
-            </li>
-            <li class="example__picture-after slider__item">
-              <picture>
-                <source media="(min-width: 1440px)" srcset="images\page\des\after-desktop.png 1x, images\page\des\after-desktop@2x.png 2x">
-                <img src="../images/page/tab/after-tab.png" srcset="images\page\tab\after-tab@2x.png 2x" alt="стало">
-              </picture>
-            </li>
-          </ol>
-          <p class="example__toggles slider__toggles">
-            <span class="slider__toggle-discription">было</span>
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">1</button>
-            <span class="slider__toggle-discription">стало</span>
-          </p>
         </article>
+        <script src="script.js"></script>
       </div>
     </section>
   </main>
