@@ -420,10 +420,12 @@
 
 .slider-wrapper .slider-before {
   background-image: url('../images/page/cat-fat.png');
+  background-color: #EAEAEA;
 }
 
 .slider-wrapper .slider-after {
-  background: url('../images/page/cat-skinny.png') top 8px right / 255px 210px no-repeat;
+  background-image: url('../images/page/cat-skinny.png');
+  margin-left: 23px;
 }
 
 .change__item{
@@ -836,8 +838,15 @@
   }
 
 
+  .slider-wrapper .slider-before {
+    background: url('../images/page/cat-fat.png') top left/ 650px 540px no-repeat,
+    linear-gradient(#FFFFFF, #FFFFFF) top left/ 650px 160px no-repeat,
+    linear-gradient(#EAEAEA, #EAEAEA) bottom left/ 650px 300px no-repeat;
+  }
+
   .slider-wrapper .slider-after {
-    background: url('../images/page/cat-skinny.png') top 23px right 0px/ 500px 486px no-repeat;
+    background-image: url('../images/page/cat-skinny.png');
+    margin-left: 70px;
   }
 
   .change__item{
@@ -1132,8 +1141,16 @@
     margin-top: -12px;
   }
 
+  .slider-wrapper .slider-before {
+    background-color: none;
+    background: url('../images/page/cat-fat.png') top left/ 650px 540px no-repeat,
+    linear-gradient(#FFFFFF, #FFFFFF) top left/ 650px 160px no-repeat,
+    linear-gradient(#F2F2F2, #F2F2F2) bottom left/ 650px 600px no-repeat;
+  }
+
   .slider-wrapper .slider-after {
-    background: url('../images/page/cat-skinny.png') top 23px right 0px/ 500px 486px no-repeat;
+    background-image: url('../images/page/cat-skinny.png');
+    margin-left: 70px;
   }
 }
 
