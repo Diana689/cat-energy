@@ -423,8 +423,7 @@
 }
 
 .slider-wrapper .slider-after {
-  background-image: url('../images/page/cat-skinny.png');
-  margin-left: 25px;
+  background: url('../images/page/cat-skinny.png') top 8px right / 255px 210px no-repeat;
 }
 
 .change__item{
@@ -836,8 +835,9 @@
     background-size: 600px 100%;
   }
 
+
   .slider-wrapper .slider-after {
-    margin-left: 47px;
+    background: url('../images/page/cat-skinny.png') top 23px right 0px/ 500px 486px no-repeat;
   }
 
   .change__item{
@@ -1130,6 +1130,10 @@
 
     margin-left: 67px;
     margin-top: -12px;
+  }
+
+  .slider-wrapper .slider-after {
+    background: url('../images/page/cat-skinny.png') top 23px right 0px/ 500px 486px no-repeat;
   }
 }
 
