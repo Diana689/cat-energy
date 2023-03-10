@@ -18,10 +18,12 @@
   line-height: 36px;
   font-weight: 400;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   padding-top: 27px;
   opacity: 100%;
   color: #FFFFFF;
+  max-width: 250px;
+
 }
 
 .program-selection{
@@ -480,8 +482,12 @@
 
 @media (min-width: 768px){
 
+  .program-selection{
+    padding-bottom: 525px;
+  }
+
    .page-main__title{
-    width: 500px;
+    max-width: 500px;
     text-align: left;
     font-size: 60px;
     line-height: 60px;
@@ -524,7 +530,7 @@
     height: 54px;
     padding: 0 26px;
     margin-left: 112px;
-    margin-bottom: 525px;
+    margin-bottom: 0px;
   }
 
   .program-selection__link-intro{
@@ -912,6 +918,10 @@
     }
   }
 
+  .program-selection{
+    padding-bottom: 270px;
+  }
+
   .page-main__title{
     padding-top: 114px;
     margin-left: 190px;
@@ -925,7 +935,7 @@
 
   .program-selection__link{
     margin-left: 190px;
-    margin-bottom: 270px;
+
   }
 
   .program{
