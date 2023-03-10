@@ -59,6 +59,7 @@
   display: block;
   margin-bottom: 49px;
   text-align: center;
+  cursor: pointer;
 }
 
 .page-footer__logo-item::after{

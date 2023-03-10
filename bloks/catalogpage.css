@@ -259,6 +259,7 @@ card-discription__into
   background: #F2F2F2;
   padding: 0;
   margin-bottom: 25px;
+  cursor: pointer;
 }
 
 .catalog-button:hover{

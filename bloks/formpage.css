@@ -161,6 +161,10 @@
   cursor: pointer;
 }
 
+.purpose__label{
+  cursor: pointer;
+}
+
 .control-mark:active{
   border: 1px solid #68B738;
 }
@@ -382,6 +386,10 @@
   cursor: pointer;
 }
 
+.additionally__control-label{
+  cursor: pointer;
+}
+
 .additionally__control-inpyt[type='checkbox']:checked + .additionally__control-mark::before{
   position: absolute;
   top: 8px;
@@ -400,6 +408,7 @@
   width: 100%;
   min-height: 40px;
   padding: 0;
+  cursor: pointer;
 }
 
 .form__button-text{

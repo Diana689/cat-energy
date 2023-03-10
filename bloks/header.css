@@ -26,6 +26,10 @@
   text-align: left;
 }
 
+.page-header__logo-items{
+  cursor: pointer;
+}
+
 .page-header__logo-items:nth-child(1){
   margin-right: 56.66px;
 }
