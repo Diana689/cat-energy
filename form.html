@@ -63,17 +63,16 @@
         <form class="form__data" action="#" method="post">
           <div class="form__personal">
             <fieldset class="form__data-personal personal-data">
-              <!-- нужен ли тут р? -->
                 <p class="personal-data__name">
                   <label class="name" for="name">имя:*</label>
-                  <input class="name__intro" id="name" type="text" name="name" placeholder="барсик">
+                  <input class="name__intro" id="name" type="text" name="name" placeholder="барсик" required >
                 </p>
                 <p class="personal-data__weight">
                   <label class="weight" for="weight">вес(кг):*</label>
-                  <input class="weight__intro" id="weight" type="text" name="weight" placeholder="7">
+                  <input class="weight__intro" id="weight" type="text" name="weight" placeholder="7" required>
                 </p>
                 <p class="personal-data__age">
-                  <label class="age" for="age">возраст(лет):*</label>
+                  <label class="age" for="age">возраст(лет):</label>
                   <input class="age__intro" id="age" type="text" name="age" placeholder="7">
                 </p>
             </fieldset>
@@ -108,14 +107,14 @@
             <div class="data-contacts__wrapper">
               <p class="data-contacts__mail">
                 <label class="mail" for="mail">E-mail:*</label>
-                <input class="mail-intro" id="mail" type="text" name="mail" placeholder="kuklachev@gmail.com">
+                <input class="mail-intro" id="mail" type="text" name="mail" placeholder="kuklachev@gmail.com" required>
                 <svg class="mail_icon" role="img">
                   <use xlink:href="/sprite.svg#icon_email"></use>
                 </svg>
               </p>
               <p class="data-contacts__number">
                 <label class="number" for="number">Телефон:*</label>
-                <input class="number-intro" id="number" type="text" name="number" placeholder="8 (960) 900-60-90">
+                <input class="number-intro" id="number" type="text" name="number" placeholder="8 (960) 900-60-90" required>
                 <svg class="icon_phone" role="img">
                   <use xlink:href="/sprite.svg#icon_phone"></use>
                 </svg>
@@ -159,18 +158,18 @@
               </li>
             </ul>
           </fieldset>
-        </form>
-        <div class="form__application">
-          <button class="form__button" type="button">
-            <span class="form__button-text">отправить заявку</span>
-          </button>
-          <p class="form__legend">
-            <small class="form__legend">
-              * — Обязательные поля
-            </small>
-          </p>
+          <div class="form__application">
+            <button class="form__button" type="submit">
+              <span class="form__button-text">отправить заявку</span>
+            </button>
+            <p class="form__legend">
+              <small class="form__legend">
+                * — Обязательные поля
+              </small>
+            </p>
+          </div>
         </div>
-      </div>
+        </form>
     </section>
   </main>
   <footer class="page-footer">

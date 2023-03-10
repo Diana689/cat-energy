@@ -69,6 +69,15 @@
   font-size: 16px;
 }
 
+input:valid:not(:placeholder-shown) {
+  border: 2px solid #444444;
+}
+
+/* input:in-range{
+  border-color: red;
+} */
+
+
 .personal-data__weight{
   display: flex;
   white-space: nowrap;
