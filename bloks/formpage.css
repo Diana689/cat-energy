@@ -69,14 +69,9 @@
   font-size: 16px;
 }
 
-input:valid:not(:placeholder-shown) {
-  border: 2px solid #444444;
+.input.error{
+  border: 2px solid #FF8282;
 }
-
-/* input:in-range{
-  border-color: red;
-} */
-
 
 .personal-data__weight{
   display: flex;
@@ -219,14 +214,14 @@ input:valid:not(:placeholder-shown) {
   color: #000000;
 }
 
-.mail{
+.email{
   margin: auto 0;
   margin-right: 12px;
   text-transform: uppercase;
   color: #444444;
 }
 
-.data-contacts__mail{
+.data-contacts__email{
   position: relative;
   white-space: nowrap;
   margin-top: 0;
@@ -234,7 +229,7 @@ input:valid:not(:placeholder-shown) {
   display: flex;
 }
 
-.mail-intro{
+.email-intro{
   font-size: 16px;
   display: block;
   height: 42px;
@@ -247,13 +242,26 @@ input:valid:not(:placeholder-shown) {
   padding-right: 50px;
 }
 
-.mail_icon{
+.email_icon{
   position: absolute;
   width: 20px;
   height: 14px;
   right: 15px;
   top: 16px;
   stroke: #222222;
+}
+
+.email_icon.error{
+  position: absolute;
+  width: 20px;
+  height: 14px;
+  right: 15px;
+  top: 16px;
+  stroke: #FF8282;
+}
+
+.email-intro:focus + .email_icon{
+  stroke: #68B738;
 }
 
 .data-contacts__number{
@@ -290,7 +298,19 @@ input:valid:not(:placeholder-shown) {
   right: 13px;
   top: 13px;
   color: #000000;
+}
 
+.number-intro:focus + .icon_phone{
+  stroke: #68B738;
+}
+
+.icon_phone.error{
+  position: absolute;
+  width: 20px;
+  height: 21px;
+  right: 13px;
+  top: 13px;
+  stroke: #FF8282;
 }
 
 .form__data-contacts::after{
@@ -559,21 +579,21 @@ background: #5EAA2F;
     max-width: 620px;
   }
 
-  .mail{
+  .email{
     margin-right: 18px;
   }
 
-  .data-contacts__mail{
+  .data-contacts__email{
     margin-bottom: 20px;
   }
 
-  .mail-intro{
+  .email-intro{
     height: 52px;
     padding-left: 21px;
     font-size: 20px;
   }
 
-  .mail_icon{
+  .email_icon{
     width: 18px;
     height: 13px;
     top: 19px;
@@ -751,17 +771,17 @@ background: #5EAA2F;
     margin-bottom: 67px;
   }
 
-  .data-contacts__mail{
+  .data-contacts__email{
     margin-bottom: 0px;
     width: 569px;
   }
 
-  .mail{
+  .email{
     margin: auto 0;
     margin-right: 20px;
   }
 
-  .mail-intro{
+  .email-intro{
     padding-left: 19px;
   }
 

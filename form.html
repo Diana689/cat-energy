@@ -60,16 +60,16 @@
         <h1 class="form__title">Подбор программы</h1>
         <p class="form__intro">Заполните анкету, и мы подберем<br>
           программу питания для вашего кота</p>
-        <form class="form__data" action="#" method="post">
+        <form class="form__data js-form" action="#" method="post">
           <div class="form__personal">
             <fieldset class="form__data-personal personal-data">
                 <p class="personal-data__name">
                   <label class="name" for="name">имя:*</label>
-                  <input class="name__intro" id="name" type="text" name="name" placeholder="барсик" required >
+                  <input class="name__intro js-input js-input-name input" id="name" type="text" name="name" placeholder="барсик" required>
                 </p>
                 <p class="personal-data__weight">
                   <label class="weight" for="weight">вес(кг):*</label>
-                  <input class="weight__intro" id="weight" type="text" name="weight" placeholder="7" required>
+                  <input class="weight__intro js-input js-input-weight input" id="weight" type="text" name="weight" placeholder="7" required>
                 </p>
                 <p class="personal-data__age">
                   <label class="age" for="age">возраст(лет):</label>
@@ -105,17 +105,17 @@
           <fieldset class="form__data-contacts data-contacts">
             <h2 class="data-contacts__title">Контактные данные (владельца кота)</h2>
             <div class="data-contacts__wrapper">
-              <p class="data-contacts__mail">
-                <label class="mail" for="mail">E-mail:*</label>
-                <input class="mail-intro" id="mail" type="text" name="mail" placeholder="kuklachev@gmail.com" required>
-                <svg class="mail_icon" role="img">
+              <p class="data-contacts__email">
+                <label class="email" for="email">E-mail:*</label>
+                <input class="email-intro js-input js-input-email input" id="email" type="text" name="email" placeholder="kuklachev@gmail.com" required>
+                <svg class="email_icon js-email_icon" role="img">
                   <use xlink:href="/sprite.svg#icon_email"></use>
                 </svg>
               </p>
               <p class="data-contacts__number">
                 <label class="number" for="number">Телефон:*</label>
-                <input class="number-intro" id="number" type="text" name="number" placeholder="8 (960) 900-60-90" required>
-                <svg class="icon_phone" role="img">
+                <input class="number-intro js-input js-input-number input" id="number" type="text" name="number" placeholder="8 (960) 900-60-90" required>
+                <svg class="icon_phone js-icon_phone" role="img">
                   <use xlink:href="/sprite.svg#icon_phone"></use>
                 </svg>
               </p>
@@ -170,6 +170,7 @@
           </div>
         </div>
         </form>
+        <script src="form.js"></script>
     </section>
   </main>
   <footer class="page-footer">
