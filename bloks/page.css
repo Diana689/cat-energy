@@ -442,7 +442,7 @@
 
 #fader{
   position: absolute;
-  left: calc( 50% - 42px) ;
+  left: calc( 50% - 45px) ;
   background-color: #FFFFFF;
   border-radius: 6px;
   border: 1px solid #CDCDCD;
@@ -455,6 +455,7 @@
   height: 6px;
   background-color: #68B738;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 .example__slider-change{
@@ -836,13 +837,11 @@
   .slider-wrapper{
     width: 600px;
     height: 100%;
-
   }
 
   .slider-wrapper .img {
     background-size: 600px 100%;
   }
-
 
   .slider-wrapper .slider-before {
     background: url('../images/page/cat-fat.png') top left/ 650px 540px no-repeat,
@@ -856,7 +855,6 @@
   }
 
   .change__item{
-
     width: 428px;
     height: 6px;
     background-color: #DCDCDC;
@@ -867,7 +865,6 @@
     left: calc(50% - 214px);
     background-color: #DCDCDC;
     border: none;
-
   }
 
   #fader::-webkit-slider-thumb {
@@ -877,6 +874,10 @@
     linear-gradient( #FFFFFF, #FFFFFF) top /100% 100% no-repeat;                ;
     border-radius: 100%;
     border: 1px solid #CDCDCD;
+  }
+
+  #fader::-webkit-slider-thumb:active{
+    border: 1px solid #68B738;
   }
 
   .example__slider-change{
