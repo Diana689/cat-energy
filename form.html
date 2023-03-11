@@ -16,11 +16,11 @@
         <picture>
           <source media="(min-width: 1440px)" srcset="images\header\logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="images\header\logo-tablet.svg">
-          <img class="page-header__logo-icon" src="images\header\logo-mobile.svg" >
+          <img class="page-header__logo-icon" src="images\header\logo-mobile.svg" alt="Логотип">
         </picture>
       </a>
       <a class="page-header__logo-items">
-        <img class="page-header__logo-item" src="images\header\logo.svg" >
+        <img class="page-header__logo-item" src="images\header\logo.svg" alt="Cat Energy">
       </a>
     </div>
     <nav class="page-header__main-nav page-header__main-nav--opened page-header__main-nav--nojs" >
@@ -65,11 +65,11 @@
             <fieldset class="form__data-personal personal-data">
                 <p class="personal-data__name">
                   <label class="name" for="name">имя:*</label>
-                  <input class="name__intro js-input js-input-name input" id="name" type="text" name="name" placeholder="барсик" required>
+                  <input class="name__intro js-input js-input-name input" id="name" type="text" name="name" placeholder="барсик" required aria-required/>
                 </p>
                 <p class="personal-data__weight">
                   <label class="weight" for="weight">вес(кг):*</label>
-                  <input class="weight__intro js-input js-input-weight input" id="weight" type="text" name="weight" placeholder="7" required>
+                  <input class="weight__intro js-input js-input-weight input" id="weight" type="text" name="weight" placeholder="7" required aria-required/>
                 </p>
                 <p class="personal-data__age">
                   <label class="age" for="age">возраст(лет):</label>
@@ -107,14 +107,14 @@
             <div class="data-contacts__wrapper">
               <p class="data-contacts__email">
                 <label class="email" for="email">E-mail:*</label>
-                <input class="email-intro js-input js-input-email input" id="email" type="text" name="email" placeholder="kuklachev@gmail.com" required>
+                <input class="email-intro js-input js-input-email input" id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required aria-required/>
                 <svg class="email_icon js-email_icon" role="img">
                   <use xlink:href="/sprite.svg#icon_email"></use>
                 </svg>
               </p>
               <p class="data-contacts__number">
                 <label class="number" for="number">Телефон:*</label>
-                <input class="number-intro js-input js-input-number input" id="number" type="text" name="number" placeholder="8 (960) 900-60-90" required>
+                <input class="number-intro js-input js-input-number input" id="number" type="tel" name="number" placeholder="8 (960) 900-60-90" required aria-required/>
                 <svg class="icon_phone js-icon_phone" role="img">
                   <use xlink:href="/sprite.svg#icon_phone"></use>
                 </svg>
