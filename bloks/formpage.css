@@ -25,6 +25,7 @@
   margin-top: 27px;
   margin-bottom: 37px;
   padding: 0;
+  font-weight: inherit;
 }
 
 .form__intro{
@@ -216,6 +217,7 @@
   margin-bottom: 30px;
   max-width: 230px;
   color: #000000;
+  font-weight: inherit;
 }
 
 .email{
@@ -340,6 +342,7 @@
   font-size: 24px;
   line-height: 26px;
   color: #000000;
+  font-weight: inherit;
 }
 
 .form-comment{
@@ -381,6 +384,7 @@
   color: #000000;
   margin: 0;
   margin-bottom: 39px;
+  font-weight: inherit;
 }
 
 .additionally__list{
