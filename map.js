@@ -8,10 +8,7 @@ ymaps.ready(function () {
         myPlacemark = new ymaps.Placemark([59.938654059375445,30.322849132773417], {
 
         }, {
-            // Опции.
-            // Необходимо указать данный тип макета.
             iconLayout: 'default#image',
-            // Своё изображение иконки метки.
             iconImageHref: 'map.png',
             iconImageSize: [113, 106],
             iconImageOffset: [-25, -45]

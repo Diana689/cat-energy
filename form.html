@@ -69,32 +69,32 @@
                 </p>
                 <p class="personal-data__weight">
                   <label class="weight" for="weight">вес(кг):*</label>
-                  <input class="weight__intro js-input js-input-weight input" id="weight" type="text" name="weight" placeholder="7" required aria-required/>
+                  <input class="weight__intro js-input js-input-weight input" id="weight" type="number" name="weight" placeholder="7" required aria-required/>
                 </p>
                 <p class="personal-data__age">
                   <label class="age" for="age">возраст(лет):</label>
-                  <input class="age__intro" id="age" type="text" name="age" placeholder="7">
+                  <input class="age__intro" id="age" type="number" name="age" placeholder="7">
                 </p>
             </fieldset>
             <fieldset class="form__data-purpose purpose">
               <ul class="purpose__list">
                 <li class="purpose__item">
-                  <label class="purpos__control">
-                    <input class="visually-hidden purpos__control-input" type="radio" name="purpos" value="slim" checked>
+                  <label class="purpos__control" for="weight-loss">
+                    <input class="visually-hidden purpos__control-input" type="radio" name="purpos" value="slim" id="weight-loss" checked>
                     <span class="control-mark"></span>
                     <span class="purpose__label">похудение</span>
                   </label>
                 </li>
                 <li class="purpose__item">
-                  <label class="purpos__control">
-                    <input class="visually-hidden purpos__control-input" type="radio" name="purpos" value="pro" checked>
+                  <label class="purpos__control" for="weight-gain">
+                    <input class="visually-hidden purpos__control-input" type="radio" name="purpos" value="pro" id="weight-gain" checked>
                     <span class="control-mark"></span>
                     <span class="purpose__label">набор массы</span>
                   </label>
                 </li>
                 <li class="purpose__item">
-                  <label class="purpos__control">
-                    <input class="visually-hidden purpos__control-input" type="radio" name="purpos" value="advice" checked>
+                  <label class="purpos__control" for="advice">
+                    <input class="visually-hidden purpos__control-input" type="radio" name="purpos" value="advice" id="advice" checked>
                     <span class="control-mark"></span>
                     <span class="purpose__label">Не знаю (Нужен ваш совет)</span>
                   </label>
@@ -129,29 +129,29 @@
             <h2 class="additionally__title">Дополнительно</h2>
             <ul class="additionally__list">
               <li class="additionally__item">
-                <label class="additionally__control">
-                  <input class="visually-hidden additionally__control-inpyt" type="checkbox" name="sugar-subsitute" checked>
+                <label class="additionally__control" for="sugar-subsitute">
+                  <input class="visually-hidden additionally__control-inpyt" type="checkbox" name="sugar-subsitute" id="sugar-subsitute" checked>
                   <span class="additionally__control-mark"></span>
                   <span class="additionally__control-label">сахарозаменитель</span>
                 </label>
               </li>
               <li class="additionally__item">
-                <label class="additionally__control">
-                  <input class="visually-hidden additionally__control-inpyt" type="checkbox" name="water" checked>
+                <label class="additionally__control" for="water">
+                  <input class="visually-hidden additionally__control-inpyt" type="checkbox" name="water" id="water" checked>
                   <span class="additionally__control-mark"></span>
                   <span class="additionally__control-label">питьевая вода</span>
                 </label>
               </li>
               <li class="additionally__item">
-                <label class="additionally__control">
-                  <input class="visually-hidden additionally__control-inpyt" type="checkbox" name="milk" checked>
+                <label class="additionally__control" for="milk">
+                  <input class="visually-hidden additionally__control-inpyt" type="checkbox" name="milk" id="milk" checked>
                   <span class="additionally__control-mark"></span>
                   <span class="additionally__control-label">молоко</span>
                 </label>
               </li>
               <li class="additionally__item">
-                <label class="additionally__control">
-                  <input class="visually-hidden additionally__control-inpyt" type="checkbox" name="vitamins" checked>
+                <label class="additionally__control" for="vitamins">
+                  <input class="visually-hidden additionally__control-inpyt" type="checkbox" name="vitamins" id="vitamins" checked>
                   <span class="additionally__control-mark"></span>
                   <span class="additionally__control-label">витамины</span>
                 </label>
