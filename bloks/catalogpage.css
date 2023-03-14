@@ -112,6 +112,7 @@ card-discription__into
   display: flex;
   justify-content: space-between;
   margin-bottom: 2px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .discription__point:last-child{
@@ -250,6 +251,7 @@ card-discription__into
   text-align: center;
   margin: 0;
   margin-bottom: 21px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .catalog-button{
@@ -363,6 +365,7 @@ card-discription__into
   margin: 0 auto;
   margin-bottom: 15px;
   max-width: 280px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .additional__card-item{
@@ -389,6 +392,7 @@ card-discription__into
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 @media (min-width: 768px){
