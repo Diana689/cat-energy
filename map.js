@@ -9,7 +9,7 @@ ymaps.ready(function () {
 
         }, {
             iconLayout: 'default#image',
-            iconImageHref: '/images/footer/map.png',
+            iconImageHref: './images/footer/map.png',
             iconImageSize: [113, 106],
             iconImageOffset: [-25, -45]
         });
