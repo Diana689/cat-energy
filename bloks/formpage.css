@@ -304,9 +304,11 @@
   right: 13px;
   top: 13px;
   color: #000000;
+
 }
 
 .number-intro:focus + .icon_phone{
+  fill: none;
   stroke: #68B738;
 }
 
