@@ -16,7 +16,6 @@
   margin: 0 20px;
   margin-bottom: 28px;
   text-align: left;
-
 }
 
 .map{
@@ -116,6 +115,7 @@
 
 .social__link-facebook{
   stroke: #666666;
+  fill: none;
   width: 22px;
   height: 22px;
 }
@@ -130,6 +130,7 @@
 }
 
 .social__link-facebook:hover{
+  fill: none;
   stroke: #68B738;
 }
 
@@ -189,12 +190,10 @@
   opacity: 30%;
 }
 
-.copyright__logo{
-
+.copyright__logo {
   fill: #666666;
   width: 27px;
   height: 34px;
-
 }
 
 .copyright__logo:hover{
